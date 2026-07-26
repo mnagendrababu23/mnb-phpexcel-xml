@@ -8,7 +8,7 @@ use Mnb\PHPExcel\Support\Arr;
 use Mnb\PHPExcel\Support\ErrorCode;
 use Mnb\PHPExcel\Support\LocaleNormalizer;
 use Mnb\PHPExcel\Support\MnbExcelException;
-use XMLReader as NativeXmlReader;
+use Mnb\PHPExcel\Support\Xml\XmlReader as NativeXmlReader;
 
 /** Secure, forward-only XML row reader with optional schema mapping. */
 final class XmlReader implements IterableReaderInterface

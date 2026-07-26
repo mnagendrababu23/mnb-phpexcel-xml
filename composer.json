@@ -5,11 +5,13 @@
     "license": "MIT",
     "require": {
         "php": ">=8.1",
-        "ext-xmlreader": "*",
-        "mnb/mnb-phpexcel-core": "^1.2"
+        "mnb/mnb-phpexcel-core": "^1.6"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
+    "suggest": {
+        "ext-xmlreader": "Recommended for true streaming XML reads; a pure-PHP fallback is included."
+    },
     "autoload": {
         "psr-4": {
             "Mnb\\PHPExcel\\": "src/"
