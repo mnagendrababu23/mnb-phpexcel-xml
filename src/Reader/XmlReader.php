@@ -11,8 +11,13 @@ use Mnb\PHPExcel\Support\MnbExcelException;
 use Mnb\PHPExcel\Support\Xml\XmlReader as NativeXmlReader;
 
 /** Secure, forward-only XML row reader with optional schema mapping. */
-final class XmlReader implements IterableReaderInterface
+final class XmlReader implements IterableReaderInterface, FormatAwareReaderInterface, SheetNamesReaderInterface
 {
+    public function format(): string
+    {
+        return 'xml';
+    }
+
     /** @return list<list<mixed>> */
     public function readSheet(string $path, int|string $sheet = 1, array $options = []): array
     {
